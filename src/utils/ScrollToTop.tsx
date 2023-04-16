@@ -13,10 +13,10 @@ const ScrollToTop = () => {
     // }, [pathname]);
 
     return (
-        <Button
-            className={"btn-accent btn-outline"}
+        <button
+            className={"text-sm font-button color-osbDeepBlue bg-[#e4eff2] text-sm pb-1 px-24 rounded-full border-none text-center"}
             onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
-        >Scroll To Top</Button>
+        >Back to the Top</button>
     );
 };
 

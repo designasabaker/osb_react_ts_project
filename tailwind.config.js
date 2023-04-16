@@ -16,6 +16,7 @@ export default {
         fontFamily:{
           heading: ["Merriweather", "sans-serif"],
           body: ["Raleway", "sans-serif"],
+          button: ["Montserrat", "sans-serif"],
         }
     },
 
