@@ -15,7 +15,7 @@ export const HomeProjects = () => {
                         {!!section.contents && section.contents.map((product, index: number) => (
                             <div className={"m-0 mb-1 p-3 flex flex-row justify-start bg-lightGrayBlue rounded-sm"} key={index}>
                                 <div className={"mr-3"}>
-                                    {product.hasOwnProperty("img") && <img className={"w-16 h-16 overflow-hiddenobject-contain"} src={product.hasOwnProperty("img") ? product.img : ""} alt={product.title}/>}
+                                    {!!product.img && <img className={"w-16 h-16 overflow-hiddenobject-contain"} src={product.hasOwnProperty("img") ? product.img : ""} alt={product.title}/>}
                                 </div>
                                 <div>
                                     <h1 className={"text-md font-heading"}>{product.title}</h1>

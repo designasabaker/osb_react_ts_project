@@ -5,7 +5,7 @@ interface Story {
     id: number;
     title: string;
     content: string;
-    img?: string;
+    img: string;
 }
 
 interface HomePageData {
@@ -68,11 +68,13 @@ export const HomePageProducts = [
                 id:1,
                 title: '',
                 content: 'Anti-aging mechanism of ferroptosis',
+                img:"",
             },
             {
                 id:2,
                 title: '',
                 content: 'Sustainability: OSB believes that sustainable active ingredients are at the core of the competitiveness of cosmetics today.',
+                img:"",
             }
         ]
     },
