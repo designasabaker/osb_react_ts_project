@@ -3,14 +3,21 @@
 
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import {Button} from "react-daisyui";
 
 const ScrollToTop = () => {
-    const { pathname } = useLocation();
+    // const { pathname } = useLocation();
+    //
+    // useEffect(() => {
+    //     window.scrollTo(0, 0);
+    // }, [pathname]);
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, [pathname]);
-    return null;
+    return (
+        <Button
+            className={"btn-accent btn-outline"}
+            onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
+        >Scroll To Top</Button>
+    );
 };
 
 export default ScrollToTop;
