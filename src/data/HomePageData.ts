@@ -20,7 +20,7 @@ export const HomePageStories: HomePageData = {
     contents: [
         {
             id: 1,
-            title: 'Our Ingredients',
+            title: 'Our Ingredients.tsx',
             content: "Our team of experienced chemists and researchers collaborate to develop groundbreaking solutions that meet the highest quality and safety standards. Through rigorous research, technology, and a commitment to sustainability, we continue to push the boundaries of what's possible in the world of chemistry.",
             img: Image1,
         },

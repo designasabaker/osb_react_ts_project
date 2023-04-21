@@ -5,7 +5,7 @@ export const HomeStories = () => {
     return (
         <div id={"homeStories"} className={"flex flex-col item-center w-full mt-16 "}>
             {HomePageStories.contents.map((story, index: number) => (
-                // one section like "Our Ingredients"
+                // one section like "Our Ingredients.tsx"
                 <div className={`w-full h-auto mt-16 py-0 px-3 lg:px-48 flex flex-col lg:flex-row justify-center items-center border-b-2 border-lightGrayBlue ${index % 2 === 1 ? 'flex-row' : 'flex-row-reverse'} `} key={index}>
                     {!!story.img && (<div className="w-2/3 lg:w-1/2 overflow-hidden flex flex-row justify-center">
                         <img className="max-h-full max-w-full object-contain px-6" src={story.img} alt={story.title} />

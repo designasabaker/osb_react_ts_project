@@ -27,7 +27,7 @@ export const Header = () => {
                 <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-white mr-4">
                     Ingredients
                 </a>
-                <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-white">
+                <a href="/contact" className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-white">
                     Contact Us
                 </a>
             </div>
