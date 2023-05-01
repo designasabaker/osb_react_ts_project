@@ -16,7 +16,10 @@ const ScrollToTop = () => {
         <button
             className={"text-sm font-button color-osbDeepBlue bg-[#e4eff2] text-sm pb-1 px-24 rounded-full border-none text-center"}
             onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
-        >Back to the Top</button>
+        >
+            <p className={"hidden sm:block"}>Back to the Top</p>
+            <p className={"sm:hidden"}>TOP</p>
+        </button>
     );
 };
 

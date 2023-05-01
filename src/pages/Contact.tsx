@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion';
 import {Banner} from "../components/Banner";
-import OceanImg from '../assets/images/ocean.jpg'
+import OceanImg from '../assets/images/ocean.jpg';
+import {ContactDetails, MessageForm} from "../components/ContactComponents";
 
 export const Contact = () => {
     return (
-        <>
+        <div>
             <Banner
                 imgUrl={OceanImg}
                 isFullHeight={false}
@@ -20,11 +21,14 @@ export const Contact = () => {
                     duration: 0.5,
                     delay: 0.1,
                 }}
-                className="container mx-auto flex flex-col-reverse lg:flex-row py-5 lg:py-10 lg:mt-10"
+                className="container mx-auto flex flex-col-reverse lg:flex-row py-5 px-12 lg:py-10 lg:mt-10"
             >
-                contact
+                <div className={"w-full grid grid-cols-1 px-12 gap-0 content-center lg:grid-cols-2"}>
+                    <ContactDetails/>
+                    <MessageForm />
+                </div>
             </motion.div>
-        </>
+        </div>
     );
 };
 

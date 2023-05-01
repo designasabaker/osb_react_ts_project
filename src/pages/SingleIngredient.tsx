@@ -2,11 +2,11 @@ import {useParams} from "react-router-dom";
 
 export const SingleIngredient = () => {
 
-  let { ingredient } = useParams();
+  let { ingredientName } = useParams();
 
   return (
     <li>
-      ingredient: {ingredient}
+      ingredient: {ingredientName}
     </li>
   );
 };
