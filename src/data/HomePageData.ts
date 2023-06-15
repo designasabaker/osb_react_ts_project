@@ -1,4 +1,8 @@
 import Image1 from '../assets/images/ocean.jpg';
+import ImageURI from '../assets/images/uri-winter.jpg';
+import ImageRH from '../assets/images/rh.jpg';
+import ImageMaplifa from '../assets/images/maplifa.jpg';
+import ImageShape from '../assets/images/shape.png';
 
 
 interface Story {
@@ -20,15 +24,15 @@ export const HomePageStories: HomePageData = {
     contents: [
         {
             id: 1,
-            title: 'Our Ingredients.tsx',
+            title: 'Our Ingredients',
             content: "Our team of experienced chemists and researchers collaborate to develop groundbreaking solutions that meet the highest quality and safety standards. Through rigorous research, technology, and a commitment to sustainability, we continue to push the boundaries of what's possible in the world of chemistry.",
-            img: Image1,
+            img: ImageURI,
         },
         {
             id: 2,
             title: 'From Rhode Island',
             content: "Founded by a chemistry professor from the University of Rhode Island, our innovative solutions are tailored to meet the ever-evolving demands of various industries. Explore our extensive collection of high-quality active ingredients and learn how we're shaping the future of chemistry from our base in Rhode Island.",
-            img: Image1,
+            img: ImageRH,
         },
     ],
 };
@@ -43,13 +47,13 @@ export const HomePageProducts = [
                 id: 1,
                 title: 'Maplifa',
                 content: 'Anti-aging, whitening, anti-oxidation',
-                img: Image1,
+                img: ImageMaplifa,
             },
             {
                 id: 2,
                 title: 'SHAPE',
                 content: 'anti-inflammatory, acne',
-                img: Image1,
+                img: ImageShape,
             },
             {
                 id: 3,
@@ -86,15 +90,17 @@ export const HomePageNews = {
     contents: [
     {
         id: 1,
+        name:'maplifa',
         title: 'Maplifa',
         content: 'Anti-aging, whitening, anti-oxidation',
-        img: Image1,
+        img: ImageMaplifa,
     },
     {
         id: 2,
+        name:'shape',
         title: 'SHAPE',
         content: 'anti-inflammatory, acne',
-        img: Image1,
+        img: ImageShape,
     },
     {
         id: 3,

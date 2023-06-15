@@ -1,5 +1,7 @@
 import OceanImg from "../assets/images/ocean.jpg";
 import {Banner} from "../components/Banner";
+import {IngredientsProvider} from "../components/context/IngredientsContext";
+import {IngredientsGrid} from "../components/Ingredients/IngredientsGrid";
 
 export const Ingredients = () => {
 
@@ -8,13 +10,15 @@ export const Ingredients = () => {
           <Banner
               imgUrl={OceanImg}
               isFullHeight={false}
-              title={"Contact Us"}
+              title={"Ingredients"}
               caption={""}
               hasBtn={false}
           />
-          <li>
-              Ingredients
-          </li>
+          <IngredientsProvider>
+                <div className="w-full flex flex-row justify-end">
+                    <IngredientsGrid />
+                </div>
+          </IngredientsProvider>
       </>
 
   );

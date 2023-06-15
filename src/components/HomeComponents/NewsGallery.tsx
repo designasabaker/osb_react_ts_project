@@ -76,7 +76,7 @@ export class NewsGallery extends Component {
                             <div className={"px-3"} key={index}>
                                 <h3 className={"text-sm font-heading"}>{news.title}</h3>
                                 <p className={"hidden sm:block h-6 text-sm"}>{news.content}</p>
-                                <img className={"w-full"} src={news.img} alt={news.title}/>
+                                <img className={"w-64 h-32 object-cover"} src={news.img} alt={news.title}/>
                             </div>
                         )
                     })}
