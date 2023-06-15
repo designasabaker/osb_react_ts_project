@@ -2,7 +2,18 @@ import {ingredients} from '../../data/Ingredients';
 import {useState, createContext, ReactNode, useEffect} from 'react';
 import {IIngredient} from "../../data/Ingredients/IIngredient";
 
-export const IngredientsContext = createContext({});
+interface IngredientsContextType {
+    ingredientsData: IIngredient[];
+    sortedIngredients: IIngredient[];
+    setSortIngredientsBy: (sortMethod: string) => void;
+    sortedMethods: string[];
+}
+export const IngredientsContext = createContext<IngredientsContextType>({
+    ingredientsData: [],
+    sortedIngredients: [],
+    setSortIngredientsBy: () => {},
+    sortedMethods: [],
+});
 
 export const IngredientsProvider = (props:any) => {
     const [ingredientsData, _] = useState(ingredients);

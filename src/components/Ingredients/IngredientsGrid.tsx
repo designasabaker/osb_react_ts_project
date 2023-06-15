@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 export const IngredientsGrid = () => {
     const {
-        ingredientsData,
+
         sortedIngredients,
         setSortIngredientsBy,
         sortedMethods
