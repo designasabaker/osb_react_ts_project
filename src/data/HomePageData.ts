@@ -2,7 +2,6 @@ import Image1 from '../assets/images/ocean.jpg';
 import ImageURI from '../assets/images/uri-winter.jpg';
 import ImageRH from '../assets/images/rh.jpg';
 import ImageMaplifa from '../assets/images/maplifa.jpg';
-import ImageShape from '../assets/images/shape.png';
 
 
 interface Story {
@@ -53,7 +52,7 @@ export const HomePageProducts = [
                 id: 2,
                 title: 'SHAPE',
                 content: 'anti-inflammatory, acne',
-                img: ImageShape,
+                img: '',
             },
             {
                 id: 3,
@@ -100,7 +99,7 @@ export const HomePageNews = {
         name:'shape',
         title: 'SHAPE',
         content: 'anti-inflammatory, acne',
-        img: ImageShape,
+        img: '',
     },
     {
         id: 3,
