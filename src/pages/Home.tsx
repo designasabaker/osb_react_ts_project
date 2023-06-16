@@ -5,6 +5,7 @@ import {HomeStories} from "../components/HomeComponents/HomeStories";
 import {HomeProjects} from "../components/HomeComponents/HomeProjects";
 import {NewsGallery} from "../components/HomeComponents/NewsGallery";
 import OceanImg from '../assets/images/ocean.jpg'
+import Sidebar from "../components/Sidebar";
 
 export const Home = () => {
     return (
@@ -19,6 +20,7 @@ export const Home = () => {
             <HomeStories />
             <HomeProjects />
             <NewsGallery />
+            <Sidebar appearThreshold={0.5} vanishThreshold={0.5}/>
         </HomeProvider>
     )
 }

@@ -12,6 +12,8 @@ export default {
           osbDeepBlue: "#0f4770",
           base: "#333",
           lightGrayBlue: "#f5f7fa",
+          buttonBlue:'#e4eff2',
+          buttonHoverBlue:'#0f4770',
         },
         fontFamily:{
           heading: ["Merriweather", "sans-serif"],

@@ -3,6 +3,9 @@ import React, {useContext} from "react";
 import {ingredients} from "../data/Ingredients";
 import OceanImg from "../assets/images/ocean.jpg";
 import {Banner} from "../components/Banner";
+import Sidebar from "../components/Sidebar";
+import ContactUsBtn from "../components/ImgredientComponents/ContactUsBtn";
+import ViewPublicationBtn from "../components/ImgredientComponents/ViewPublicationBtn";
 
 export const SingleIngredient = () => {
 
@@ -19,14 +22,16 @@ export const SingleIngredient = () => {
               hasBtn={false}
           />
           {ingredient &&
-              <div>
-                  <div className="w-full flex flex-row justify-center">
-                      <img src={ingredient.img} alt={ingredient.title} />
-                      <div>
+              <>
+                  <div className="w-full flex flex-row justify-center px-20">
+                      <img
+                          className={"w-1/2 p-10"}
+                          src={ingredient.img} alt={ingredient.title} />
+                      <div className={"flex flex-col w-1/2 p-10"}>
                           <h1>{ingredient.title}</h1>
                           <p>{ingredient.details?.detailedDescription}</p>
-                          <button>View Publications</button>
-                          <button>Contact us for further information</button>
+                          <ViewPublicationBtn name={"View Publications"} url={"/"} />
+                          <ContactUsBtn />
                       </div>
                   </div>
                   <div>
@@ -45,6 +50,7 @@ export const SingleIngredient = () => {
                       <p>{ingredient.details?.origin}</p>
                   </div>
                   <Link to="/ingredients">Back to Ingredients</Link>
-              </div>}
+              </>}
+          <Sidebar appearThreshold={0.1} vanishThreshold={0.1} />
       </>)
 };

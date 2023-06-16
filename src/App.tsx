@@ -8,6 +8,7 @@ import ScrollToTop from './utils/ScrollToTop';
 import {Footer} from "./components/Footer";
 import TransparentImageBox from "./components/TransparentImageBox";
 import {Ingredients} from "./pages/Ingredients";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   const [count, setCount] = useState(0)

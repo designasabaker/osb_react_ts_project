@@ -7,7 +7,6 @@ export const TransparentImageBox = () => {
             <div className="absolute w-full h-full bg-gradient-to-b from-white"></div>
             <img className={"z-[-10] w-full h-full object-cover"} src={ocean} alt="transparent-image-box"/>
             <div className={"z-10 absolute top-0 left-1/2 transform translate-x-[-50%]"}>
-                <ScrollToTop />
             </div>
         </div>
     )

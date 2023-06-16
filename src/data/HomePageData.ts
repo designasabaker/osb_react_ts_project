@@ -9,6 +9,7 @@ interface Story {
     title: string;
     content: string;
     img: string;
+    buttonUrl:string,
 }
 
 interface HomePageData {
@@ -26,12 +27,14 @@ export const HomePageStories: HomePageData = {
             title: 'Our Ingredients',
             content: "Our team of experienced chemists and researchers collaborate to develop groundbreaking solutions that meet the highest quality and safety standards. Through rigorous research, technology, and a commitment to sustainability, we continue to push the boundaries of what's possible in the world of chemistry.",
             img: ImageURI,
+            buttonUrl:'/ingredients',
         },
         {
             id: 2,
             title: 'From Rhode Island',
             content: "Founded by a chemistry professor from the University of Rhode Island, our innovative solutions are tailored to meet the ever-evolving demands of various industries. Explore our extensive collection of high-quality active ingredients and learn how we're shaping the future of chemistry from our base in Rhode Island.",
             img: ImageRH,
+            buttonUrl:'/ingredients',
         },
     ],
 };

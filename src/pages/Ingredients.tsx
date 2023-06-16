@@ -2,6 +2,8 @@ import OceanImg from "../assets/images/ocean.jpg";
 import {Banner} from "../components/Banner";
 import {IngredientsProvider} from "../components/context/IngredientsContext";
 import {IngredientsGrid} from "../components/Ingredients/IngredientsGrid";
+import Sidebar from "../components/Sidebar";
+import React from "react";
 
 export const Ingredients = () => {
 
@@ -19,6 +21,7 @@ export const Ingredients = () => {
                     <IngredientsGrid />
                 </div>
           </IngredientsProvider>
+          <Sidebar appearThreshold={0} vanishThreshold={0.3}/>
       </>
 
   );

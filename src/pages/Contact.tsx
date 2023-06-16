@@ -2,10 +2,12 @@ import { motion } from 'framer-motion';
 import {Banner} from "../components/Banner";
 import OceanImg from '../assets/images/ocean.jpg';
 import {ContactDetails, MessageForm} from "../components/ContactComponents";
+import Sidebar from "../components/Sidebar";
+import React from "react";
 
 export const Contact = () => {
     return (
-        <div>
+        <>
             <Banner
                 imgUrl={OceanImg}
                 isFullHeight={false}
@@ -28,7 +30,8 @@ export const Contact = () => {
                     <MessageForm />
                 </div>
             </motion.div>
-        </div>
+            <Sidebar appearThreshold={0} vanishThreshold={0.1}/>
+        </>
     );
 };
 
